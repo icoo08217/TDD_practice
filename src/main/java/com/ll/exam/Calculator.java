@@ -2,10 +2,10 @@ package com.ll.exam;
 
 public class Calculator {
     public static int add(String s){
-        if(s.equals("10 + 50")){
-            return 60;
-        }
+        String[] sSplit = s.split(" \\+ ");
+        int num1 = Integer.parseInt(sSplit[0]);
+        int num2 = Integer.parseInt(sSplit[1]);
 
-        return 50;
+        return num1 + num2 ;
     }
 }

@@ -19,4 +19,11 @@ public class AppTest {
 
         assertEquals(50 , test);
     }
+
+    @Test
+    public void 더하기_테스트3(){
+        int test = Calculator.add("10 + 10");
+
+        assertEquals(20, test);
+    }
 }
