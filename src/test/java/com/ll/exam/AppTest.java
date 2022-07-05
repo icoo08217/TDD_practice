@@ -25,4 +25,11 @@ public class AppTest {
 
         assertEquals(20, test);
     }
+
+    @Test
+    public void 빼기() {
+        int test = Calculator.run("20 - 25");
+
+        assertEquals(-5, test);
+    }
 }
